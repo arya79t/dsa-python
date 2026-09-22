@@ -1,6 +1,6 @@
 class Solution:
     def maxVowels(self, s: str, k: int) -> int:        
-        current=sum([1 for x in s[0:k] if x in 'aeiou'])
+        current=sum([1 for x in s[:k] if x in 'aeiou'])
         m=current
 
         for x in range(k,len(s)):
