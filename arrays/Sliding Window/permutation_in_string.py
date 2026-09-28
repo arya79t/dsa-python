@@ -3,7 +3,6 @@ class Solution:
         if len(s1)>len(s2): return False
 
         d1,d2={},{}
-        left=0
         l_s1=len(s1)        
 
         for x in range(l_s1):
