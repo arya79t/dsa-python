@@ -5,3 +5,4 @@ My journey learning Data Structures and Algorithms using Python.
 
 - Arrays
 - Strings
+- Binary Search
