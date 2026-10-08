@@ -6,8 +6,9 @@ class Solution:
             mid=(left+right)//2
 
             if nums[mid]==target: return mid
-            elif nums[mid]>=nums[right] and nums[mid]<target<=nums[right]: left=mid+1 #left half> right half: search in right half
-            elif nums[left]<=nums[mid] and nums[mid]<target<=nums[right]: left=mid+1 #search in right half
-            else: right=mid-1
+            elif nums[mid]<=nums[right] and nums[mid]<target<=nums[right]: left=mid+1 # Right half is sorted
+            elif nums[mid]<=nums[right]: right=mid-1 # Right half is sorted, target is not there
+            elif nums[left]<=nums[mid] and nums[left]<=target<nums[mid]: right=mid-1 # Left half is sorted and target in left
+            else: left=mid+1
         
         return -1
