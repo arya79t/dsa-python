@@ -6,11 +6,11 @@ Understanding time and space complexity is essential for analyzing how efficient
 The O means Order of growth. 
 We're asking: As the input gets bigger, how does the amount of work or memory used by my algorithm grow?
 
-- O(1)       Constant
-- O(log n)   Logarithmic
-- O(n)       Linear
-- O(n log n) Linearithmic
-- O(n²)      Quadratic
+- O(1)       Constant        Example: Accessing arr[0].
+- O(log n)   Logarithmic     Example: Binary search on a sorted array.
+- O(n)       Linear          Example: Checking every element in an array.
+- O(n log n) Linearithmic    Example: Merge Sort, repeatedly divides array into halves and merges elements in sorted order.
+- O(n²)      Quadratic       Example: Comparing every element with every other element using nested loops.
 
 ## 1. Time Complexity
 Example:
